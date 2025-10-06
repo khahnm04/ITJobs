@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -6,4 +7,8 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1184px;
   --breakpoint-2xl: 1184px;
+}
+
+* {
+  font-family: "Lexend", sans-serif;
 }
