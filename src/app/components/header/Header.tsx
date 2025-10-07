@@ -1,8 +1,18 @@
+"use client"
 import Link from "next/link"
 import { FaBars } from "react-icons/fa6";
 import { HeaderMenu } from "./HeaderMenu";
+import { useState } from "react";
 
 export const Header = () => {
+
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleShowMenu = () => {
+    setShowMenu(!showMenu);
+  }
+
+  console.log(showMenu);
 
   return (
     <>
@@ -14,7 +24,7 @@ export const Header = () => {
               28.ITJobs
             </Link>
             {/* Menu */}
-            <HeaderMenu />
+            <HeaderMenu showMenu={showMenu} />
             {/* Account */}
             <div className="font-[600] sm:text-[16px] text-[12px] text-white inline-flex gap-x-[5px]">
               <Link href="#" className="">
@@ -26,7 +36,10 @@ export const Header = () => {
               </Link>
             </div>
             {/* Button Menu Mobile */}
-            <button className="lg:hidden ml-[12px]">
+            <button
+              className="lg:hidden ml-[12px]"
+              onClick={handleShowMenu}
+            >
               <FaBars className="text-[20px] text-white" />
             </button>
           </div>
