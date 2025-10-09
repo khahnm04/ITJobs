@@ -57,7 +57,7 @@ export default function SearchPage() {
           </div>
 
           {/* Danh sách công việc */}
-          <div className="grid lg:grid-cols-3 grid-cols-2 sm:gap-x-[20px] gap-x-[10px] gap-y-[20px]">
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-x-[20px] gap-x-[10px] gap-y-[20px]">
             {/* Item */}
             <Link
               href=""
@@ -115,6 +115,15 @@ export default function SearchPage() {
                 </div>
               </div>
             </Link>
+          </div>
+
+          {/* Phân trang */}
+          <div className="mt-[30px]">
+            <select className="border border-[#DEDEDE] rounded-[8px] py-[12px] px-[18px]">
+              <option value="">Trang 1</option>
+              <option value="">Trang 2</option>
+              <option value="">Trang 3</option>
+            </select>
           </div>
 
         </div>
