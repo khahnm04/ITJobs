@@ -73,6 +73,13 @@ export default function JobDetailPage() {
                 </div>
               </div>
               {/* Thông tin công việc */}
+
+
+              {/* Mô tả chi tiết */}
+              <div className="border border-[#DEDEDE] rounded-[8px] p-[20px] mt-[20px]">
+                Mô tả chi tiết
+              </div>
+              {/* Hết Mô tả chi tiết */}
             </div>
 
             {/* Right */}
