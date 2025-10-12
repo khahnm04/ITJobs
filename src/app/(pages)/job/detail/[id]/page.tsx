@@ -16,25 +16,25 @@ export default function JobDetailPage() {
       <div className="pt-[30px] pb-[60px]">
         <div className="container">
           {/* Wrap */}
-          <div className="flex gap-[20px]">
+          <div className="flex flex-wrap gap-[20px]">
 
             {/* Left */}
-            <div className="w-[65%]">
+            <div className="lg:w-[65%] w-full">
               {/* Thông tin công việc */}
               <div className="rounded-[8px] border border-[#DEDEDE] p-[20px]">
-                <h1 className="font-[700] text-[28px] text-[#121212] mb-[10px]">
+                <h1 className="font-[700] sm:text-[28px] text-[24px] text-[#121212] mb-[10px]">
                   Front End Developer ( Javascript, ReactJS)
                 </h1>
                 <div className="font-[400] text-[16px] text-[#414042] mb-[10px]">
                   LG CNS Việt Nam
                 </div>
-                <div className="font-[700] text-[20px] text-[#0088FF] mb-[20px]">
+                <div className="font-[700] text-[20px] text-[#0088FF] sm:mb-[20px] mb-[10px]">
                   1.000$ - 1.500$
                 </div>
                 <Link href="#" className="bg-[#0088FF] rounded-[4px] p-[14px] font-[700] text-[16px] text-white mb-[20px] block text-center">
                   Ứng tuyển
                 </Link>
-                <div className="grid grid-cols-3 gap-x-[16px] mb-[20px]">
+                <div className="grid grid-cols-3 sm:gap-[16px] gap-[8px] mb-[20px]">
                   <img
                     src="/assets/images/demo-banner-1.jpg"
                     alt=""
@@ -80,6 +80,63 @@ export default function JobDetailPage() {
                 Mô tả chi tiết
               </div>
               {/* Hết Mô tả chi tiết */}
+
+              {/* Form Ứng tuyển */}
+              <div className="rounded-[8px] border border-[#DEDEDE] p-[20px] mt-[20px]">
+                <h2 className="font-[700] text-[20px] text-black mb-[20px]">
+                  Ứng tuyển ngay
+                </h2>
+                <form action="" className="flex flex-col gap-[15px]">
+                  <div className="">
+                    <label htmlFor="fullName" className="font-[500] text-[14px] text-black mb-[5px]">
+                      Họ tên *
+                    </label>
+                    <input
+                      type="text"
+                      name=""
+                      id="fullName"
+                      className="w-full h-[46px] rounded-[4px] border border-[#DEDEDE] font-[500] text-[14px] text-black px-[20px]"
+                    />
+                  </div>
+                  <div className="">
+                    <label htmlFor="email" className="font-[500] text-[14px] text-black mb-[5px]">
+                      Email *
+                    </label>
+                    <input
+                      type="email"
+                      name=""
+                      id="email"
+                      className="w-full h-[46px] rounded-[4px] border border-[#DEDEDE] font-[500] text-[14px] text-black px-[20px]"
+                    />
+                  </div>
+                  <div className="">
+                    <label htmlFor="phone" className="font-[500] text-[14px] text-black mb-[5px]">
+                      Số điện thoại *
+                    </label>
+                    <input
+                      type="text"
+                      name=""
+                      id="phone"
+                      className="w-full h-[46px] rounded-[4px] border border-[#DEDEDE] font-[500] text-[14px] text-black px-[20px]"
+                    />
+                  </div>
+                  <div className="">
+                    <label htmlFor="fileCV" className="font-[500] text-[14px] text-black mb-[5px]">
+                      File CV dạng PDF *
+                    </label>
+                    <input
+                      type="file"
+                      name=""
+                      id="fileCV"
+                      className="w-full h-[46px] rounded-[4px] border border-[#DEDEDE] font-[500] text-[14px] text-black px-[20px] file:py-[12px]"
+                    />
+                  </div>
+                  <button className="w-full h-[48px] bg-[#0088FF] rounded-[4px] font-[700] text-[16px] text-white cursor-pointer">
+                    Gửi CV ứng tuyển
+                  </button>
+                </form>
+              </div>
+              {/* Hết Form Ứng tuyển */}
             </div>
 
             {/* Right */}
@@ -108,7 +165,7 @@ export default function JobDetailPage() {
                     <div className="font-[400] text-[16px] text-[#A6A6A6]">
                       Mô hình công ty
                     </div>
-                    <div className="font-[400] text-[16px] text-[#121212]">
+                    <div className="font-[400] text-[16px] text-[#121212] text-right">
                       Sản phẩm
                     </div>
                   </div>
@@ -116,7 +173,7 @@ export default function JobDetailPage() {
                     <div className="font-[400] text-[16px] text-[#A6A6A6]">
                       Quy mô công ty
                     </div>
-                    <div className="font-[400] text-[16px] text-[#121212]">
+                    <div className="font-[400] text-[16px] text-[#121212] text-right">
                       151 - 300 nhân viên
                     </div>
                   </div>
@@ -124,7 +181,7 @@ export default function JobDetailPage() {
                     <div className="font-[400] text-[16px] text-[#A6A6A6]">
                       Thời gian làm việc
                     </div>
-                    <div className="font-[400] text-[16px] text-[#121212]">
+                    <div className="font-[400] text-[16px] text-[#121212] text-right">
                       Thứ 2 - Thứ 6
                     </div>
                   </div>
@@ -132,7 +189,7 @@ export default function JobDetailPage() {
                     <div className="font-[400] text-[16px] text-[#A6A6A6]">
                       Làm việc ngoài giờ
                     </div>
-                    <div className="font-[400] text-[16px] text-[#121212]">
+                    <div className="font-[400] text-[16px] text-[#121212] text-right">
                       Không có OT
                     </div>
                   </div>
