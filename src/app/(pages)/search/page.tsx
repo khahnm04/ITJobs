@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { Pagination } from "@/app/components/pagination/Pagination";
 import { Section1 } from "@/app/components/section/Section1";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -118,13 +119,7 @@ export default function SearchPage() {
           </div>
 
           {/* Phân trang */}
-          <div className="mt-[30px]">
-            <select className="border border-[#DEDEDE] rounded-[8px] py-[12px] px-[18px]">
-              <option value="">Trang 1</option>
-              <option value="">Trang 2</option>
-              <option value="">Trang 3</option>
-            </select>
-          </div>
+          <Pagination />
 
         </div>
       </div>
