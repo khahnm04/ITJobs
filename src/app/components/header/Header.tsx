@@ -3,6 +3,7 @@ import Link from "next/link"
 import { FaBars } from "react-icons/fa6";
 import { HeaderMenu } from "./HeaderMenu";
 import { useState } from "react";
+import { HeaderAccount } from "./HeaderAccount";
 
 export const Header = () => {
 
@@ -26,15 +27,7 @@ export const Header = () => {
             {/* Menu */}
             <HeaderMenu showMenu={showMenu} />
             {/* Account */}
-            <div className="font-[600] sm:text-[16px] text-[12px] text-white inline-flex gap-x-[5px]">
-              <Link href="#" className="">
-                Đăng Nhập
-              </Link>
-              <span className="">/</span>
-              <Link href="#" className="">
-                Đăng Ký
-              </Link>
-            </div>
+            <HeaderAccount />
             {/* Button Menu Mobile */}
             <button
               className="lg:hidden ml-[12px]"
